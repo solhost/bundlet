@@ -55,3 +55,5 @@ We reccomend deleting
 - worker.c | It is now compiled as a seperate binary.
 - bundlet_bundler | The user will only have to run the bundlet binary. Not the Compiler that Compiles the Bundlet Compiler 💀
 - Also make example.go your actual project lmao.
+# Important
+*"im not sure if this works..?"* - **Solhost** - *2026*
