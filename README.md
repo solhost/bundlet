@@ -1,23 +1,37 @@
-# Documentation
-In order to use bundlet, you and the user need:
-```
-- a linux operating system
-- the go programming language
-- the GCC (GNU C Compiler)
-```
-You must first now edit the files, such as bundlet.go:
+<p align="center">
+  <img src="assets/logo.svg" alt="Bundlet logo" width="75">
+</p>
 
-worker.c:
-```
+<h1 align="center">
+  Bundlet
+</h1>
+
+Bundlet is a simple compiler package for projects that allows you to distribute completely open-source, non compiled software. That allows the user to simply compile your project with the run of a script.
+
+## Requirements
+
+1. a Linux desktop
+2. the GCC (GNU C Compiler) installed
+3. Golang/Go installed
+
+## Setup
+
+To properly use Bundlet, edit [`worker.c`](./worker.c):
+
+```c
 #include <stdlib.h>
 
 int main() {
-  system("go build example.go"); // edit "example.go" with the name of your go file, eg; "craftmine_real.go"
+  system("go build example.go"); // edit "example.go" with the name of your go file, eg; "src/your-software.go"
   return 0;
 }
 ```
-bundlet.go:
-```
+
+We recommend you put your source files in `src/`, however it's not a requirement.
+
+[`bundlet.go`](./bundlet.go):
+
+```go
 package main
 
 import (
@@ -42,18 +56,10 @@ func main() {
   }
 }
 ```
-To set it up, you as a dev must run:
-```
-gcc bundlet_bundler.c -o mainbundler
-```
-```
-./mainbundler
-```
-You have now compiled the basic bundlet runtime.
-# Shipping it:
-We reccomend deleting
-- worker.c | It is now compiled as a seperate binary.
-- bundlet_bundler and mainbundler | The user will only have to run the bundlet binary. Not the Compiler that Compiles the Bundlet Compiler 💀
-- Also make example.go your actual project lmao.
-# Important
-*"im not sure if this works..?"* - **Solhost** - *2026*
+
+## Shipping Your Project
+
+We recommend removing:
+
+1. [`worker.c`](./worker.c), as it is compiled as a seperate binary. *Do not do this if you are making a fork of Bundlet.*
+2. [`bundlet_bundler.c`](./bundlet_bundler.c) and `mainbundler`, as the user will only need to run the Bundlet binary.
