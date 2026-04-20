@@ -6,7 +6,7 @@
   Bundlet
 </h1>
 
-Bundlet is a simple compiler package for projects that allows you to distribute completely open-source, non compiled software. That allows the user to simply compile your project with the run of a script.
+Bundlet is a simple compiler package that lets you distribute completely open-source, non-compiled software, allowing users to compile your project by running a script.
 
 ## Requirements
 
@@ -61,5 +61,5 @@ func main() {
 
 We recommend removing:
 
-1. [`worker.c`](./worker.c), as it is compiled as a seperate binary. *Do not do this if you are making a fork of Bundlet.*
+1. [`worker.c`](./worker.c), as it is compiled as a separate binary. *Do not do this if you are making a fork of Bundlet.*
 2. [`bundlet_bundler.c`](./bundlet_bundler.c) and `mainbundler`, as the user will only need to run the Bundlet binary.
