@@ -6,7 +6,7 @@
   Bundlet
 </h1>
 
-Bundlet is a simple compiler package that lets you distribute completely open-source, non-compiled software, allowing users to compile your project by running a script.
+Bundlet is a simple compiler package for projects that allows you to distribute completely open-source, not precompiled software so users can simply compile your project by running a script.
 
 ## Requirements
 
