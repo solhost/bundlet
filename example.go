@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-  fmt.Println("Hello, World. This is a example for bundlet lmao.")
+  fmt.Println("Hello, World. This is a example for Bundlet, Hello from Triflare!")
 }
