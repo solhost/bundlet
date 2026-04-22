@@ -1,6 +1,6 @@
-<center>
-<img src="assets/gb.md.png">
-</center>
+<p align="center">
+<img src="assets/gb.md.png" alt="logo">
+</p>
 
 # Documentation
 In order to use Bundlet, Both the Developer and User need these tools:
