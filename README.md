@@ -6,6 +6,7 @@
 In order to use Bundlet, both the developer and user need these tools:
 ```
 - A Linux desktop
+- Python 3 (This is for setting up Bundlet.)
 - Golang/Go (This is mainly needed for the "go build" tool.)
 - The GCC (GNU C Compiler) (Only the Developer needs the GNU C Compiler, it is necessary for bundlet_bundler to run.)
 ```
