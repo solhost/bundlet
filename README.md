@@ -1,5 +1,5 @@
 <p align="center">
-<img src="assets/gb.md.png" alt="logo">
+<img src="assets/Bundlet logos.svg" alt="logo">
 </p>
 
 # Documentation
