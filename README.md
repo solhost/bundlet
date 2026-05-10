@@ -3,9 +3,9 @@
 </p>
 
 # Documentation
-In order to use Bundlet, Both the Developer and User need these tools:
+In order to use Bundlet, both the developer and user need these tools:
 ```
-- A Linux Desktop
+- A Linux desktop
 - Golang/Go (This is mainly needed for the "go build" tool.)
 - The GCC (GNU C Compiler) (Only the Developer needs the GNU C Compiler, it is necessary for bundlet_bundler to run.)
 ```
@@ -59,6 +59,6 @@ You have now compiled the basic Bundlet package!
 # Shipping it:
 We recommend you delete these files when you decide to create a release for your project.
 - worker.c | It is now compiled as a seperate binary and Bundlet does not need the source code.
-- bundlet_bundler.go and mainbundler | The user will only need to run the Bundlet Binary, The source code is no longer needed.
+- bundlet_bundler.go and mainbundler | The user will only need to run the Bundlet binary, the source code is no longer needed.
 ## Notes
 Bundlet is not a bundler, It is a build tool. I made this name before I knew what bundler meant. But Bundlet is a template which kind of loops back to a actual bundler?
